@@ -1,0 +1,11 @@
+{
+  "name": "SunnySideAgency-LandingPage",
+  "version": "1.0.0",
+  "dependencies": {
+    "autoprefixer": "^10.3.4"
+  },
+  "devDependencies": {
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.9"
+  }
+}
