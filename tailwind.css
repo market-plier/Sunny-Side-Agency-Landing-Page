@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-image {
+    background: url("../images/desktop/image-header.jpg") no-repeat center;
+    background-size: cover;
+}
+li{
+    @apply mr-12
+}
