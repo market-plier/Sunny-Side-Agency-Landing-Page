@@ -671,6 +671,9 @@ video {
 .mt-\[85px\] {
 	margin-top: 85px;
 }
+.inline-block {
+	display: inline-block;
+}
 .flex {
 	display: flex;
 }
@@ -707,6 +710,9 @@ video {
 }
 .transform {
 	transform: var(--tw-transform);
+}
+.cursor-pointer {
+	cursor: pointer;
 }
 .grid-cols-2 {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -889,10 +895,66 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(69, 140, 126, var(--tw-text-opacity));
 }
+.transition {
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+.duration-300 {
+	transition-duration: 300ms;
+}
+.ease-in-out {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .bg-image {
-    background: url("images/desktop/image-header.jpg") no-repeat center;
+    background: url("../images/desktop/image-header.jpg") no-repeat center;
     background-size: cover;
 }
 li {
 	margin-right: 3rem;
+}
+.yellow:after {
+	--tw-bg-opacity: 1;
+	background-color: rgba(250, 212, 0, var(--tw-bg-opacity));
+}
+.red:after {
+	--tw-bg-opacity: 1;
+	background-color: rgba(254, 120, 103, var(--tw-bg-opacity));
+}
+.more-shadow::after {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	display: block;
+	height: 8px;
+	width: 100%;
+	border-radius: 0.25rem;
+	opacity: 0;
+	transition-property: opacity;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+}
+.more-shadow:hover::after {
+	opacity: 1;
+}
+.fill-white:hover {
+    fill: white;
+}
+.fill-default {
+    fill: #2C7566;
+    transition: ease-in-out 300ms;
+}
+.hover\:bg-opacity-30:hover {
+	--tw-bg-opacity: 0.3;
+}
+.hover\:text-white:hover {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }

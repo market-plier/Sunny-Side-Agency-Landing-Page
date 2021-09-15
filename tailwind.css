@@ -9,3 +9,26 @@
 li{
     @apply mr-12
 }
+.yellow:after{
+    @apply bg-[#FAD400]
+}
+.red:after{
+    @apply bg-[#FE7867]
+}
+.more-shadow::after {
+    @apply rounded transition-opacity ease-in-out duration-300 opacity-0 absolute inset-x-0 -bottom-0 h-[8px] w-full z-[-1] block;
+    content: ""
+}
+
+.more-shadow:hover::after{
+    @apply opacity-100
+}
+
+.fill-white:hover {
+    fill: white;
+}
+
+.fill-default {
+    fill: #2C7566;
+    transition: ease-in-out 300ms;
+}
