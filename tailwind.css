@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image {
+.bg-image-mobile {
+    background: url("../images/mobile/image-header.jpg") no-repeat center;
+    background-size: cover;
+}
+.bg-image-desktop {
     background: url("../images/desktop/image-header.jpg") no-repeat center;
     background-size: cover;
 }
@@ -31,4 +35,13 @@ li{
 .fill-default {
     fill: #2C7566;
     transition: ease-in-out 300ms;
+}
+
+.burger-opened{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
 }
