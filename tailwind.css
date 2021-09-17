@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image-mobile {
+.bg-image {
     background: url("images/mobile/image-header.jpg") no-repeat center;
     background-size: cover;
 }
-.bg-image-desktop {
-    background: url("images/desktop/image-header.jpg") no-repeat center;
-    background-size: cover;
+@media (min-width: 768px) {
+
+    .bg-image {
+        background: url("images/desktop/image-header.jpg") no-repeat center;
+        background-size: cover;
+    }
 }
+
 li{
     @apply md:mr-12
 }
