@@ -11,7 +11,7 @@
     background-size: cover;
 }
 li{
-    @apply mr-12
+    @apply md:mr-12
 }
 .yellow:after{
     @apply bg-[#FAD400]
@@ -39,9 +39,21 @@ li{
 
 .burger-opened{
     display: flex;
+    justify-content: space-evenly;
+    color: black;
     position: absolute;
-    top: 10px;
-    bottom: 30px;
-    left: 20px;
-    right: 20px;
+    top: 106px;
+    bottom: 526px;
+    left: 22px;
+    right: 24px;
+}
+.burger-opened::before{
+    content: "";
+    position: absolute;
+    top: -26px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 26px solid transparent;
+    border-bottom: 26px solid white;
 }
